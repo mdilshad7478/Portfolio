@@ -4,7 +4,7 @@
   "name": "babu-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mdilshad7478/Portfolio",
+  "homepage": "https://mdilshad7478.github.io/Portfolio",
 
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
