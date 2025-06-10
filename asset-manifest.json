@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/babu-portfolio/static/css/main.70a994e9.css",
+    "main.js": "/babu-portfolio/static/js/main.696a81df.js",
+    "static/js/453.661c8900.chunk.js": "/babu-portfolio/static/js/453.661c8900.chunk.js",
+    "index.html": "/babu-portfolio/index.html",
+    "main.70a994e9.css.map": "/babu-portfolio/static/css/main.70a994e9.css.map",
+    "main.696a81df.js.map": "/babu-portfolio/static/js/main.696a81df.js.map",
+    "453.661c8900.chunk.js.map": "/babu-portfolio/static/js/453.661c8900.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70a994e9.css",
+    "static/js/main.696a81df.js"
+  ]
+}
