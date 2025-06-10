@@ -7,7 +7,9 @@ const AboutSection = () => {
       items: ['SQL (MySQL, PostgreSQL)', 'Python (Pandas, NumPy)', 'Statistical Analysis', 'ETL Processes'],
       icon: BarChart3
     },
-    {
+    
+    {//tyui
+
       category: 'Business Intelligence',
       items: ['Power BI', 'Tableau', 'Dashboard Development', 'KPI Tracking'],
       icon: Database
