@@ -9,133 +9,144 @@ const ProjectsSection = () => {
       title: 'Blinkit 360° Business Intelligence',
       subtitle: 'QuickCommerce Analytics Platform',
       date: 'Apr 2025',
-      technologies: ['Power BI', 'SQL', 'Data Modeling', 'Figma', 'ETL', 'DAX'],
-      description: 'Developed an end-to-end business intelligence solution for Blinkit, a leading quick-commerce platform in India. The platform provides actionable insights across operations, inventory management, and customer behavior analytics, serving 500+ business users across the organization.',
+      technologies: ['Power BI', 'MySQL(Workbench)', 'Data Modeling', 'Figma', 'ETL', 'DAX','ODBC'],
+      description: 'Built a comprehensive business intelligence dashboard for a fast-paced quick-commerce environment inspired by Blinkit. The project simulates real-world data challenges across multiple domains, providing interactive insights into operations, sales, inventory, customer behavior, and marketing performance.',
       features: [
-        'Reduced time-to-insight by 40% through optimized data models and automated refreshes',
-        'Implemented dynamic filters enabling drill-down analysis by region, product category, and time period',
-        'Integrated with ERP system to provide real-time inventory tracking and demand forecasting',
-        'Designed executive dashboard with KPI scorecards for C-level monitoring',
-        'Created anomaly detection system for unusual sales patterns'
+        'Designed with Power BI, supported by MySQL backend and Figma for UI reference',
+        'Implemented dynamic filters enabling drill-down analysis by region, product category, time period, customer segment etc',
+        'Designed KPI cards for inventory, marketing, and customer metrics, enabling quick insights for stakeholders',
+        'Reduced simulated time-to-insight by ~40% by optimizing data model structure and using auto-refresh pipelines',
+        'Integrated inventory and order data to simulate a 12% potential reduction in stockouts',
+        'Built the dashboard with capability to integrate ERP data for real-time inventory tracking and demand forecasting'
+
+
       ],
-      impact: "Enabled data-driven decision making that contributed to 15% improvement in inventory turnover and 12% reduction in out-of-stock scenarios.",
+      impact: [
+        'This project demonstrated how a well-designed dashboard can simulate real-world operational improvements. It showcased a potential 15% improvement in inventory turnover and a 12% reduction in stockouts through real-time visibility and restocking insights. The marketing analytics provided clarity on campaign effectiveness, while customer segmentation helped simulate retention strategies. By consolidating key metrics across inventory, customer behavior, and marketing, the dashboard enabled stakeholders to make faster, data-driven decisions.'
+      ],
       gradient: "from-blue-600 to-blue-800",
       screenshots: [
-        "/images/blinkit-dashboard-1.png",
-        "/images/blinkit-dashboard-2.png"
+        `${process.env.PUBLIC_URL}/images/Home.png`,
+        `${process.env.PUBLIC_URL}/images/Overview.png`,
+        `${process.env.PUBLIC_URL}/images/Sale Overview.png`,
+        `${process.env.PUBLIC_URL}/images/Customer.png`,
+        `${process.env.PUBLIC_URL}/images/Inventory.png`,
+        `${process.env.PUBLIC_URL}/images/Feedback.png`,
+        `${process.env.PUBLIC_URL}/images/Marketing.png`
       ],
-      challenges: "The main challenge was integrating 8 different data sources with varying schemas and refresh cycles into a single coherent model while maintaining performance for 500+ concurrent users.",
-      learnings: "This project taught me the importance of stakeholder alignment in BI projects - ensuring the visualizations matched exactly what different departments needed. I also learned advanced DAX optimization techniques to handle large datasets efficiently."
+      challenges: "The primary challenge was integrating multiple datasets with varying schemas and refresh patterns into a unified data model while maintaining dashboard performance. Designing efficient data relationships and optimizing DAX for interactivity required careful planning. Ensuring a smooth user experience across multiple report pages without real stakeholder feedback added complexity to the design process.",
+      learnings: "This project enhanced my ability to build scalable BI dashboards aligned with business goals. I learned to structure efficient data models, design stakeholder-focused visuals, and apply Power BI performance tuning. It also strengthened my understanding of cross-functional KPIs and introduced me to advanced DAX techniques for handling large datasets smoothly."
     },
     {
       title: 'Healthcare ER Analytics',
       subtitle: 'Patient Flow Optimization',
       date: 'Jun 2024',
-      technologies: ['Power BI', 'MySQL', 'Process Mining', 'Python', 'Tableau'],
-      description: 'Comprehensive analysis of emergency room operations for a 500-bed hospital to identify bottlenecks and improve patient throughput. The solution processed 2+ million patient records to uncover operational insights.',
+      technologies: ['Power BI', 'MySQL', 'DAX', 'Python', 'ETL','Data Modelling'],
+      description: 'Developed an interactive Power BI dashboard to analyze emergency room (ER) operations and improve patient flow and resource allocation. The solution explored trends in patient wait times, satisfaction scores, referral patterns, and visit demographics to uncover operational inefficiencies and enhance care delivery.',
       features: [
-        'Identified 22% variation in triage times between shifts, leading to staffing adjustments',
-        'Developed predictive model for patient admission likelihood (85% accuracy)',
-        'Created physician scorecards tracking quality metrics and efficiency',
-        'Implemented real-time bed tracking system reducing bed assignment time by 30%',
-        'Built patient wait time forecasting model with 90% accuracy'
+        'Analyzed average wait times across different appointment types and time periods to identify bottlenecks',
+        'Investigated patient satisfaction trends by demographic segments to support quality improvement',
+        'Tracked monthly and yearly ER visits to uncover demand trends and inform staffing decisions',
+        'Explored referral vs. walk-in behavior to optimize departmental workflows',
+        'Created visual breakdowns of visits by age, race, and weektype to support inclusive care strategies',
+        'Identified gaps in feedback collection through “Service Not Rated” patterns'
       ],
-      impact: "Contributed to 18% reduction in average patient wait times and improved satisfaction scores from 3.2 to 4.1 (out of 5) within 6 months of implementation.",
+      impact: "The insights provided by the dashboard could support hospital administrators in improving operational efficiency, reducing patient wait times, and enhancing overall patient experience. The project demonstrates how real-time analytics can optimize emergency department performance through data-driven decisions.",
       gradient: "from-green-600 to-teal-600",
       screenshots: [
-        "/images/healthcare-dashboard-1.png",
-        "/images/healthcare-dashboard-2.png"
+        `${process.env.PUBLIC_URL}/images/Patients ER Visit Dashboard.png`
       ],
-      challenges: "Working with sensitive healthcare data required special privacy considerations. We had to implement strict data anonymization while still maintaining analytical value.",
-      learnings: "I gained deep understanding of healthcare operations and learned how to balance data utility with privacy requirements. The project also improved my process mining skills significantly."
+      challenges: "The dataset contained missing values and inconsistent entries that required extensive data cleaning and validation. Creating a cohesive model with multiple categorical variables and time-based metrics also posed challenges in dashboard design and performance optimization.",
+      learnings: "This project deepened my understanding of healthcare analytics and operational KPIs in emergency services. I improved my skills in designing meaningful visuals for non-technical users and applied DAX to generate time-based insights. It also taught me how data visualization can directly support service quality improvements."
     },
     {
-      title: 'Flight Fare Prediction Engine',
-      subtitle: 'Machine Learning Solution',
+      title: 'MSc Project: Flight Fare Prediction and Analysis',
+      subtitle: 'Machine Learning-Powered Travel Pricing Insights',
       date: 'Dec 2023 - Mar 2024',
       technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Feature Engineering', 'Power BI', 'Flask'],
-      description: 'Machine learning model to predict flight prices with 92% accuracy, helping travelers identify optimal booking times. The system processed 5+ years of historical flight data across 50+ airlines.',
+      description: 'Developed a machine learning model to predict flight fares based on historical data and visualized insights through an interactive Power BI dashboard. The project enables users to explore pricing patterns, identify the best times to book, and understand key drivers influencing flight prices.',
       features: [
-        'Engineered features capturing temporal patterns, route popularity, and fuel price trends',
-        'Compared multiple regression algorithms with XGBoost delivering best performance',
-        'Deployed as interactive dashboard showing price trends and prediction confidence intervals',
-        'Built API endpoint for integration with travel websites',
+        'Performed end-to-end data preprocessing including cleaning, encoding, and feature engineering on flight data',
+        'Trained and compared multiple regression models (Random Forest, XGBoost, Ridge, Lasso etc) to predict airfare',
+        'Built a user-friendly Power BI dashboard with dynamic filters to display trends by airline, class, stops, and travel time',
+        'Identified optimal booking periods, cheapest and fastest airlines, and pricing variation by class and stopovers',
         'Implemented automated data pipeline fetching latest fare data daily'
       ],
-      impact: "Model achieved 92% accuracy in test set, outperforming commercial alternatives by 7%. The prediction engine helped users save an average of 18% on flight bookings.",
+      impact: "The solution enhances decision-making for travelers by simplifying complex airfare data. It empowers users to reduce costs by understanding price trends and booking strategically. The dashboard also demonstrates how machine learning can improve transparency and planning in the travel sector.",
       gradient: "from-purple-600 to-indigo-600",
       screenshots: [
-        "/images/flight-prediction-1.png",
-        "/images/flight-prediction-2.png"
+        `${process.env.PUBLIC_URL}/images/Screenshot 2024-04-04 041740.png`,
+        `${process.env.PUBLIC_URL}/images/Screenshot 2024-04-04 034527.png`
       ],
-      challenges: "The biggest challenge was handling the volatility of flight prices and accounting for numerous external factors like holidays, events, and fuel price fluctuations.",
-      learnings: "This project significantly improved my feature engineering skills and taught me how to productionize machine learning models. I also learned about creating intuitive visualizations for complex predictive models."
+      challenges: "Managing high variability in pricing due to external factors like holidays, seasons, and stopovers was a major challenge. Also, ensuring consistency across multiple categorical features required careful data wrangling and preprocessing.",
+      learnings: "This project improved my skills in supervised learning, model evaluation, and visual storytelling. I gained experience in comparing ML models and learned how to transform complex predictive insights into a clear, user-focused dashboard experience."
     },
     {
       title: 'AtliQ Hardware Sales Analytics',
-      subtitle: 'Retail Performance Dashboard',
+      subtitle: 'Retail Sales & Performance Dashboard',
       date: 'Mar 2024',
-      technologies: ['Power BI', 'SQL', 'DAX', 'Data Warehousing', 'Azure Synapse'],
-      description: 'Sales performance tracking system for AtliQ Hardware, a retail chain with 150+ locations across India. The solution consolidated data from 8 regional databases into a unified analytics platform.',
+      technologies: ['Power BI', 'MySQL' , 'SQL ETL' , 'Power Query' , 'DAX', 'Data Modeling'],
+      description: 'Designed and developed a comprehensive Power BI dashboard to analyze AtliQ Hardware’s sales across multiple regions in India. The project involved building a clean, integrated data model by extracting, transforming, and loading (ETL) sales data from MySQL databases, enabling better visibility into sales trends, regional performance, and product-level insights.',
       features: [
-        'Developed executive summary with YTD performance vs targets and regional breakdown',
-        'Implemented anomaly detection to flag unusual sales patterns for investigation',
-        'Created inventory optimization module reducing carrying costs by 12%',
-        'Built salesperson performance tracking with commission calculations',
-        'Designed mobile-friendly views for field managers'
+        'Built clean, integrated star schema data model from multiple raw datasets using SQL and Power Query',
+        'Converted USD currency data to INR for accurate financial analysis reflecting India-only operations',
+        'Developed interactive Power BI reports with drill-downs for regional, product, and time-based sales analysis',
+        'Enabled real-time insights into quarterly growth, regional performance gaps, and inventory trends'
       ],
-      impact: "Adopted as standard reporting tool by executive team, projected to contribute to 7% revenue growth through better inventory management and sales targeting.",
+      impact: "The dashboard replaced manual, verbal reporting and Excel-based analyses, providing the sales management team with accurate, timely insights to make data-driven decisions. The solution is expected to contribute to at least 7% revenue growth by uncovering hidden sales issues and optimizing inventory and regional sales strategies.",
       gradient: "from-amber-600 to-orange-600",
       screenshots: [
-        "/images/retail-dashboard-1.png",
-        "/images/retail-dashboard-2.png"
+        `${process.env.PUBLIC_URL}/images/Sales Insights Dashboard.png`
       ],
-      challenges: "The data quality from different regions varied significantly, requiring extensive data cleansing and standardization. We also had to handle conflicting business rules across regions.",
-      learnings: "I learned advanced data modeling techniques to handle disparate data sources and gained experience in retail-specific metrics and KPIs. The project also improved my skills in creating user-friendly interfaces for non-technical users."
+      challenges: "Handled messy data with duplicates, inconsistent currency formats, and null values requiring thorough cleansing and normalization. Integrated disparate regional datasets with varying quality and business rules into a cohesive analytics model. Ensured the dashboard performed efficiently despite complex joins and large volumes of data.",
+      learnings: "Gained hands-on experience in ETL process, complex SQL querying, and designing star schema data models for retail analytics. Improved skills in transforming raw data into actionable sales insights and delivering user-friendly BI solutions tailored for non-technical stakeholders."
     },
     {
-      title: 'Customer Churn Prediction',
-      subtitle: 'Telecom Analytics Solution',
-      date: 'Jan 2024',
-      technologies: ['Python', 'PySpark', 'Logistic Regression', 'Random Forest', 'Tableau'],
-      description: 'Developed a predictive model identifying customers at risk of churn for a telecom provider with 10+ million subscribers. The solution analyzed customer behavior patterns and service usage to predict churn likelihood.',
+      title: 'PwC Power BI Job Simulation',
+      subtitle: 'Virtual Internship – Business Intelligence Use Cases',
+      date: 'May 2024',
+      technologies: ['Power BI' , 'Power Query' , 'DAX' , 'Data Cleaning' , 'Data Modelling'],
+      description: 'Completed a structured, scenario-based Power BI virtual internship by PwC Switzerland through Forage. The simulation focused on building dashboards for different departments including Call Center Operations, Customer Retention, and Diversity & Inclusion, demonstrating how BI tools can drive operational and strategic decisions.',
       features: [
-        'Achieved 89% accuracy in predicting churn 30 days in advance',
-        'Identified top 5 factors contributing to customer churn',
-        'Integrated with marketing automation system for targeted retention campaigns',
-        'Created executive dashboard showing churn trends and prevention effectiveness',
-        'Implemented monthly model retraining pipeline'
+        'Task 1 : Call Center Analytics: Built KPIs for call volume, agent performance, answer speed, and customer satisfaction',
+        'Task 2 : Customer Retention: Created churn risk dashboard based on customer demographics and behavioral patterns',
+        'Task 3 : Diversity & Inclusion: Developed HR dashboard showcasing gender balance, promotions, and hiring diversity',
+        'Applied Power Query for data cleaning and DAX for KPI generation across three different business domains',
+        'Delivered stakeholder-ready reports aligning with real-world executive expectations'
       ],
-      impact: "Reduced monthly churn rate from 2.1% to 1.4% within 3 months, saving an estimated $4M annually in customer acquisition costs.",
+      impact: "Demonstrated how data visualization can support strategic decision-making in customer operations and human resources. The dashboards highlighted process inefficiencies, helped in identifying churn risks, and provided transparency in diversity metrics.",
       gradient: "from-red-600 to-pink-600",
       screenshots: [
-        "/images/churn-dashboard-1.png",
-        "/images/churn-dashboard-2.png"
+        `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 152737.png`,
+       `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 153748.png`,
+       `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 153821.png`,
+       `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 153850.png`,
+       `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 153912.png`,
+       `${process.env.PUBLIC_URL}/images/Screenshot 2025-06-21 153948.png`
       ],
-      challenges: "The highly imbalanced dataset (only 2% churn cases) required special sampling techniques and careful metric selection to avoid misleading accuracy scores.",
-      learnings: "This project deepened my understanding of handling imbalanced datasets and the importance of business-aligned evaluation metrics beyond just accuracy. I also learned how to effectively communicate model insights to business stakeholders."
+      challenges: "Each dataset had unique formatting issues requiring domain-specific cleaning. Balancing visual clarity while serving different departments (support, retention, HR) required adaptive dashboard design.",
+      learnings: "This project improved my ability to translate business questions into data-driven dashboards. I also learned to design visuals tailored to different stakeholders—agents, managers, and executives—while applying cross-domain BI principles."
     },
     {
-      title: 'Supply Chain Optimization',
-      subtitle: 'Inventory Management System',
-      date: 'Nov 2023',
+      title: 'Accenture Data Analytics and Visualization',
+      subtitle: 'Content Strategy Insights for Social Media Client',
+      date: 'May 2024',
       technologies: ['Python', 'Linear Programming', 'Tableau', 'SQL', 'AWS Lambda'],
-      description: 'Optimization system for a manufacturing company with 5 production facilities and 200+ suppliers. The solution balanced inventory costs with service level requirements across the supply chain network.',
+      description: 'Simulated the role of a Data Analyst at Accenture to help a social media client understand user engagement and content performance. Worked with multiple datasets to identify top-performing content categories and usage trends, and delivered findings through a compelling PowerPoint presentation and dashboard.',
       features: [
-        'Reduced total inventory costs by 17% while maintaining 98% service level',
-        'Implemented multi-echelon inventory optimization model',
-        'Created supplier performance dashboard with lead time analytics',
-        'Developed automated reorder point calculations',
-        'Built scenario planning tool for demand fluctuations'
+        'Cleaned and modeled 3 datasets (Reactions, Content, Reaction Types) to build a unified analysis table',
+        'Identified the top 5 content categories based on reaction scores using Excel formulas like VLOOKUP, SUMIF, and PivotTables',
+        'Created interactive visualizations in Power BI to display content trends and peak engagement periods',
+        'Highlighted the month with the most user activity and explored content engagement by type and volume',
+        'Designed and delivered a professional PowerPoint presentation summarizing findings for internal stakeholders and the client'
       ],
-      impact: "The system reduced inventory carrying costs by $2.3M annually while improving on-time delivery from 89% to 96%.",
+      impact: "The project uncovered actionable insights that would allow the social media client to refine its content strategy, improve engagement rates, and prioritize high-performing content categories in preparation for IPO positioning.",
       gradient: "from-emerald-600 to-cyan-600",
       screenshots: [
-        "/images/supplychain-dashboard-1.png",
-        "/images/supplychain-dashboard-2.png"
+        `${process.env.PUBLIC_URL}/images/Accenture Dashboard.png`
       ],
-      challenges: "The complex interdependencies between different inventory locations and varying lead times required sophisticated modeling approaches beyond standard EOQ formulas.",
-      learnings: "I gained expertise in supply chain optimization techniques and learned how to balance competing business objectives through mathematical modeling. The project also improved my skills in building optimization tools for non-technical users."
+      challenges: "Merging and cleaning inconsistent datasets across multiple sources while maintaining data integrity was a key challenge. Aligning content categories across tables and ensuring accurate aggregation required careful formula design and validation.",
+      learnings: "This simulation sharpened my skills in Excel-based data modeling, Power BI dashboard creation, and presentation storytelling. I also improved my ability to communicate technical insights to non-technical stakeholders through compelling visuals and summaries."
     }
   ];
 
@@ -157,7 +168,7 @@ const ProjectsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-3">Selected Projects</h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mx-auto"></div>
           <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-            Here are some of my most impactful projects. Click on any project to view detailed Project, screenshots, and learnings.
+            Here are some of my most impactful projects. Click on any project to view details, screenshots, and key learnings.
           </p>
         </div>
         

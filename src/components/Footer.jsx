@@ -45,9 +45,9 @@ const Footer = () => {
               <MapPin className="text-blue-400" size={24} />
             </div>
             <h4 className="font-medium mb-1">Location</h4>
-            <p className="text-gray-400 text-sm mb-4">Malappuram, Kerala, India</p>
+            <p className="text-gray-400 text-sm mb-4">Jeddah, Saudi Arabia</p>
             <a
-              href="https://www.google.com/maps/place/Malappuram,+Kerala"
+              href="https://www.google.com/maps/place/Jeddah,+SaudiArabia"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-all"

@@ -39,7 +39,7 @@ const Header = ({ activeSection, setActiveSection }) => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-pointer">
-            Mohammed Dilshad
+            Mohammed Dilshad M
           </div>
           
           <div className="flex items-center space-x-4">

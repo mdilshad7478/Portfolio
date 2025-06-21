@@ -1,10 +1,10 @@
-import { BarChart3, Database, Brain, Code } from 'lucide-react';
+import { BarChart3, Database, Brain, Code, Users } from 'lucide-react';
 
 const AboutSection = () => {
   const skills = [
     {
       category: 'Data Analysis',
-      items: ['SQL (MySQL, PostgreSQL)', 'Python (Pandas, NumPy)', 'Statistical Analysis', 'ETL Processes'],
+      items: ['SQL (MySQL)', 'Python (Pandas, NumPy)', 'Statistical Analysis', 'ETL Processes'],
       icon: BarChart3
     },
     
@@ -20,10 +20,15 @@ const AboutSection = () => {
       icon: Brain
     },
     {
-      category: 'Tools & Platforms',
+      category: 'Data Support Tools',
       items: ['Microsoft Excel', 'Google Sheets', 'Lucidchart', 'Figma', 'Git'],
       icon: Code
     },
+    {
+    category: 'Professional Skills',
+    items: ['Problem Solving', 'Team Collaboration', 'Communication', 'Time Management','Attention to Detail'],
+    icon: Users
+  }
   ];
 
   return (
@@ -38,14 +43,18 @@ const AboutSection = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white border-l-4 border-blue-600 pl-4">About Me</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Results-driven Business Intelligence Analyst with expertise in transforming raw data into strategic insights.
+              Results-driven Data Analyst with expertise in transforming raw data into strategic insights.
               With a strong foundation in statistics and hands-on experience in data analytics, I specialize in creating
               data-driven solutions that enhance decision-making and operational efficiency.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               My approach combines technical expertise with business acumen, enabling me to bridge the gap between data
-              and business strategy. I have successfully delivered analytics solutions across healthcare, e-commerce,
-              and retail sectors, consistently driving measurable improvements.
+              and business strategy. I have successfully delivered analytics solutions across varous sectors including edtech, healthcare, quick-commerce, transportation, and retail, consistently driving measurable improvements.
+
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              I am passionate about leveraging analytics to solve real-world problems and drive sustainable business growth. I’m committed to continuous learning and actively explore new tools and methods to enhance my analytical capabilities.
+
             </p>
             
             <div className="pt-4">

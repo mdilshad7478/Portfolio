@@ -302,15 +302,15 @@ const HeroSection = () => {
               } text-yellow-400 animate-pulse`} />
               <TypeAnimation
                 sequence={[
-                  'Business Intelligence Analyst',
+                  'Data Analyst',
                   2000,
-                  'Data Scientist', 
+                  'Business Intelligence Analyst', 
+                  2000,
+                  'Power BI Developer',
+                  2000,
+                  'MIS Analyst',
                   2000,
                   'Data Visualization Expert',
-                  2000,
-                  'SQL & Python Developer',
-                  2000,
-                  'Analytics Consultant',
                   2000
                 ]}
                 wrapper="span"
@@ -337,11 +337,13 @@ const HeroSection = () => {
               isMobile ? 'text-sm' : 
               'text-base sm:text-lg'
             }`}>
-              Transforming complex data into{' '}
+              Transforming raw data into{' '}
               <span className="font-semibold text-blue-600 dark:text-blue-400">actionable insights</span>
               {' '}to drive business growth and operational efficiency through{' '}
               <span className="font-semibold text-indigo-600 dark:text-indigo-400">advanced analytics</span>
-              {' '}and visualization.
+              {' '} 
+              <span className="font-semibold text-indigo-600 dark:text-indigo-400">dashboards</span>, and{' '}
+              <span className="font-semibold text-indigo-600 dark:text-indigo-400">business intelligence</span>
             </p>
           </motion.div>
 
@@ -464,7 +466,7 @@ const HeroSection = () => {
                   href={item.href}
                   target={!item.download ? "_blank" : "_self"}
                   rel="noopener noreferrer"
-                  download={item.download ? "Mohammed_Dilshad_Resume.pdf" : null}
+                  download={item.download ? "Mohammed Dilshad M -- Resume.pdf" : null}
                   className={`group relative bg-gradient-to-r ${item.color} text-white ${
                     isSmallMobile ? 'px-3 py-2 text-xs' : 'px-4 sm:px-6 py-3 text-sm sm:text-base'
                   } rounded-xl font-semibold transition-all duration-300 flex items-center justify-center ${

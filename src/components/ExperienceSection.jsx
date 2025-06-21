@@ -4,26 +4,29 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: 'Business Analyst',
-      company: 'Interval, Calicut',
-      period: 'Jul 2024 -- Present',
-      technologies: ['Power BI', 'MySQL', 'Python', 'ETL', 'Data Modeling'],
+      company: 'Interval, Calicut - India',
+      period: 'Jul 2024 -- Mar 2025',
+      technologies: ['Power BI', 'MySQL', 'Excel','Python', 'ETL', 'Data Modeling'],
       achievements: [
         'Designed and implemented optimized data pipelines, improving data accuracy by 30% and reducing processing time by 25%',
         'Developed interactive Power BI dashboards that provided real-time business insights, adopted by executive leadership for strategic decision-making',
         'Standardized data structures across multiple sources, enabling cross-functional analysis and reporting',
-        'Collaborated with stakeholders to define KPIs and metrics that aligned with business objectives'
+        'Collaborated with stakeholders to define KPIs and metrics that aligned with business objectives',
+        'Performed regular KPI analysis and sales forecasting to support operational planning and performance reviews',
+  'Conducted competitor benchmarking and SWOT analysis to support the company’s expansion strategy into new cities, using data-backed insights to identify potential market-fit courses'
       ]
     },
     {
-      title: 'Data Analytics Intern',
-      company: 'National Sample Survey Office (NSSO), Srinagar',
+      title: 'Summer Intern - Periodic Labour Force Survey (PLFS)',
+      company: 'National Sample Survey Office (NSSO), Srinagar - India',
       period: 'Jun 2023 -- Aug 2023',
       technologies: ['Statistical Analysis', 'Data Collection', 'Data Cleaning', 'Survey Methodology'],
       achievements: [
-        'Contributed to the Periodic Labor Force Survey of India, a nationwide survey with over 100,000 respondents',
-        'Performed data validation and cleaning procedures that improved dataset quality by 15%',
-        'Assisted in statistical analysis of labor market trends, supporting policy recommendations',
-        'Documented data collection processes and recommended improvements to field operations'
+        'Participated in the implementation of the Periodic Labour Force Survey (PLFS), a flagship national survey to assess employment and unemployment trends across India.',
+        'Conducted structured field data collection and revisits using NSSO’s official sampling methodology.',
+        'Assisted in cleaning and validating collected data to ensure consistency and accuracy before analysis.',
+        'Contributed to the statistical analysis of employment status relative to educational qualifications.',
+        'Supported the preparation of field reports to inform regional employment policy and planning.'
       ]
     }
   ];
@@ -52,6 +55,12 @@ const ExperienceSection = () => {
       issuer: 'Forage',
       date: '2023',
       skills: ['Business Reporting', 'Dashboard Design', 'Client Requirements']
+    },
+    {
+      name: 'Accenture Data Analytics and Visualization - Job Simulation',
+      issuer: 'Forage',
+      date: '2023',
+      skills: ['Data Cleaning', 'Exploratory Data Analysis', 'Strategic Insight Presentation']
     }
   ];
 
